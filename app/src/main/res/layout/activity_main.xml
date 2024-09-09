@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULADORA DO RETÂNGULO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextLargura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Largura (m)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura (m)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular área"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxPerimetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular perímetro"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxDiagonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular diagonal"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonMetros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metros"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonCentimetros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centímetros"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
